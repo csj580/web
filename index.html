@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!-- saved from url=(0193)file:///C:/APM_Setup/htdocs/%EB%B8%94%EB%A3%A8%EC%95%84%EC%B9%B4%EC%9D%B4%EB%B8%8C/%EB%B8%94%EB%A3%A8%EC%95%84%EC%B9%B4%EC%9D%B4%EB%B8%8C%20%EC%A0%95%EB%B3%B4%20%EC%82%AC%EC%9D%B4%ED%8A%B8.html -->
+<html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>블루아카이브 정보 사이트</title>
+    <script src = "colors.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <input id = 'night_day' type = 'button', value="night" onclick="
+    var target = document.querySelector('body');
+      if(this.value === 'night'){
+        target.style.backgroundColor = 'black';
+        target.style.color = 'white';
+        this.value = 'day';
+
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length){
+
+          alist[i].style.color = 'powderblue';
+          i= i+1;
+        }
+      } else {
+        target.style.backgroundColor = 'white';
+        target.style.color = 'black';
+        this.value = 'night';
+
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length){
+
+          alist[i].style.color = 'blue';
+          i= i+1;
+        }
+      }
+
+    ">
+    <style>
+
+    body{
+      margin:0;
+    }
+    #grid{
+      border-right:  black 2px solid;
+      display: grid;
+      grid-template-columns: 0 120px 1fr 0 70px 100px;
+      width : 120px;
+    }
+    #center {
+      width: 540px;
+    }
+    .abidos ol {
+      padding-left: 200px;
+      padding-right: 200px;
+    }
+    ol{
+
+      width:190px;
+      font-size:30px;
+      margin:0;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 30px;
+      padding-right: 400px;
+      text-align: center;
+      border-right:  2px gray solid;
+      border-bottom:  2px gray solid;
+      height:230px;
+      }
+    h1 {
+      font-size:45px;
+      text-align: center;
+      border-bottom:2px solid gray;
+      margin: 0px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-right: 104px;
+      width:1300px;
+    }
+      a {
+            text-decoration: none;
+            padding-left: 10px;
+            display: block;
+            color:black;
+            text-align: center;
+      }
+      li {
+        margin-left: 20px;
+        width:100px;
+
+      }
+      h2 {
+        width:150px;
+        text-align: center;
+        margin-top: 0px;
+        height: 30px;
+        padding-left: 10px;
+        width: 100px;
+        padding-right: 10px;
+        padding-top: 130px;
+        padding-bottom: 110px;
+        border-bottom: 2px gray solid;
+        border-right: 2px gray solid;
+      }
+
+      @media(max-width:800px){
+        #grid{
+          display: block;
+        }
+      }
+      #grid img{
+         width: 100px;
+         padding-top: 50px;
+         padding-left: 10px;
+      }
+      img{
+        width: 1400px;
+      }
+      h3{
+        margin: 0;
+        width:200px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="center">
+      <img src="image/메인.jpg" >
+    </div>
+    <input id="night_day" type="button" value="야간모드" onclick="
+      nightDayHandler(this);
+    ">
+    <h1>블루아카이브 캐릭터(한섭기준)</h1>
+    <div id="grid">
+        <img src="image/아비도스.png">
+        <h2>아비도스</h2>
+    <div class="abidos">
+    <ol>
+      <h3>대책위원회</h3>
+    <a href="시로코.html" title="시로코 캐릭터"> 시로코 </a>
+    <a href="세리카.html" title="세리카 캐릭터"> 세리카 </a>
+    <a href="호시노.html" title="호시노 캐릭터"> 호시노</a></li>
+    <a href="노노미.html" title="노노미 캐릭터"> 노노미 </a></li>
+    <a href="아야네.html" title="아야네 캐릭터"> 아야네 </a></li>
+    </ol>
+  </div>
+        <img src="image/게헨나.png">
+        <h2>게헨나</h2>
+    <div style="display:grid; grid-template-columns: 170px 200px 0">
+    <ol>
+      <h3>선도부</h3>
+    <a href="히나.html" title="히나 캐릭터"> 히나 </a>
+    <a href="이오리.html" title="이오리 캐릭터"> 이오리 </a>
+    <a href="치나츠.html" title="치나츠 캐릭터"> 치나츠 </a>
+    </ol>
+    <ol>
+      <h3>흥신소68</h3>
+      <a href="아루.html" title="아루 캐릭터"> 아루 </a>
+      <a href="카요코.html" title="카요코 캐릭터"> 카요코 </a>
+      <a href="하루카.html" title="하루카 캐릭터"> 하루카 </a>
+      <a href="무츠키.html" title="무츠키 캐릭터"> 무츠키 </a>
+
+    </ol>
+    <ol>
+      <h3>미식연구회</h3>
+      <a href="하루나.html" title="하루나 캐릭터"> 하루나 </a>
+      <a href="이즈미.html" title="이즈미 캐릭터"> 이즈미 </a>
+      <a href="아카리.html" title="아카리 캐릭터"> 아카리 </a>
+      <a href="준코.html" title="준코 캐릭터"> 준코 </a>
+    </ol>
+
+    </div>
+  </div>
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/627885e2b0d10b6f3e7137ad/1g2jclvnv';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+</html>
